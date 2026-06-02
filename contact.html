@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Network for Children in Need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Organization Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Network for Children In Need </h1>
+                    <h1>Orphanage Home</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in Touch With Us</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" onsubmit="submitContactForm(event)">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number (Optional)</label>
+                            <input type="tel" id="contactPhone" name="contactPhone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="contactSubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper">
+                    <h2>Our Contact Information</h2>
+                    
+                    <div class="contact-info-card">
+                        <h3>📍 Address</h3>
+                        <p>14 Alusine Lane<br>
+                        Furniture Junction Old Road<br>
+                        Allen Town<br>
+                        Network for Children in Need Orphanage</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📞 Phone</h3>
+                        <p><strong>Main Office:</strong> +1 (555) 123-4567<br>
+                        <strong>Emergency:</strong> +1 (555) 987-6543<br>
+                        <strong>Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>✉️ Email</h3>
+                        <p><strong>General:</strong> info@networkforchildren.org<br>
+                        <strong>Donations:</strong> donate@networkforchildren.org<br>
+                        <strong>Sponsorship:</strong> sponsor@networkforchildren.org</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>🌐 Social Media</h3>
+                        <p><a href="#" class="social-link">Facebook</a><br>
+                        <a href="#" class="social-link">Twitter</a><br>
+                        <a href="#" class="social-link">Instagram</a></p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>🕐 Visiting Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 10:00 AM - 4:00 PM<br>
+                        <strong>Saturday:</strong> 10:00 AM - 3:00 PM<br>
+                        <strong>Sunday:</strong> 2:00 PM - 5:00 PM<br>
+                        <small><em>Please arrange visits in advance</em></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.7640892484!2d-13.2317!3d8.4606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3c895f5d5d5d5d5d%3A0x0!2s14%20Alusine%20Lane%20Furniture%20Junction!5e0!3m2!1sen!2ssl!4v1234567890" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>How can I make a donation?</h3>
+                    <p>You can donate through our website by clicking the "Donate Now" button. We accept credit cards, bank transfers, and other payment methods. All donations are secure and tax-deductible.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Can I sponsor a child?</h3>
+                    <p>Yes! We offer child sponsorship programs. For more information, please contact us at sponsor@networkforchildren.org or call our office during business hours.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>How can I volunteer?</h3>
+                    <p>We welcome volunteers! Please visit our office or send us an email with information about your skills and availability. We have various volunteer opportunities available.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What does my donation support?</h3>
+                    <p>Your donation supports food, shelter, education, healthcare, clothing, and recreational activities for the children in our care. We provide detailed reports on how funds are used.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Is your organization registered?</h3>
+                    <p>Yes, we are a registered non-profit organization with all necessary certifications and clearances. We are committed to transparency and accountability in all our operations.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>How can I stay updated?</h3>
+                    <p>Subscribe to our newsletter on the blog page, follow us on social media, or check our website regularly for updates on programs, events, and children's success stories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Join Our Newsletter</h2>
+            <p>Be the first to hear about updates, events, and ways to help the children in our care.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Network for Children in Need</h4>
+                    <p>Creating hope, changing lives, building futures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: 14 Alusine Lane, Furniture Junction Old Road Allen Town</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: info@networkforchildren.org</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Network for Children in Need. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonateModal()">&times;</span>
+            <h2>Donate to Network for Children in Need</h2>
+            <form class="donate-form" id="donationForm" onsubmit="processDonationWithPayPal(event)">
+                <div class="form-group">
+                    <label for="donerName">Full Name</label>
+                    <input type="text" id="donerName" name="donerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerEmail">Email Address</label>
+                    <input type="email" id="donerEmail" name="donerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerMessage">Message (Optional)</label>
+                    <textarea id="donerMessage" name="donerMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="donate-btn">Proceed to PayPal</button>
+            </form>
+            <!-- PayPal Button Container -->
+            <div id="paypal-button-container" style="display:none; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZu0TJ8lWJw4POCPxNLPv0Ypqr5xQw0Q9x4z6K7L8M9N0O1P2Q3&currency=USD"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

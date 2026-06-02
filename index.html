@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network for Children in Need - Orphanage Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/logo.png" sizes="30x30">
+    <link rel="apple-touch-icon" href="/img/logo.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Organization Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Network for Children In Need</h1>
+                    <h1>Orphanage Home</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img/7.jpg" alt="Children learning">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Welcome to Our Home</h2>
+                        <p>Nurturing dreams, building futures</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/5.jpg" alt="Happy children">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Care & Community</h2>
+                        <p>Every child deserves love and support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/11.jpg" alt="Education program">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Quality Education</h2>
+                        <p>Empowering young minds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/12.jpg" alt="Recreation activities">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Fun & Activities</h2>
+                        <p>Growing through play and learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/13.jpg" alt="Health services">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Health & Wellness</h2>
+                        <p>Ensuring every child thrives</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/9.jpg" alt="Community support">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Community Support</h2>
+                        <p>Together we make a difference</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/10.jpg" alt="Hope for future">
+                <div class="slide-overlay">
+                    <div class="slide-text">
+                        <h2>Hope & Future</h2>
+                        <p>Building tomorrow, today</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            <!-- Dot indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+        
+        <!-- Call to Action Button -->
+        <div class="hero-cta">
+            <a href="#donate-section" class="donate-btn">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- About Section (Brief) -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>Network for Children in Need is dedicated to providing a safe, nurturing environment where children can grow, learn, and thrive. We believe every child deserves care, education, and hope for a brighter future.</p>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate-section" class="donate-section">
+        <div class="container">
+            <h2>Make a Difference</h2>
+            <p>Your generous donation helps us provide food, education, healthcare, and love to the children in our care.</p>
+            <button class="donate-btn" onclick="openDonateModal()">Donate Now</button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-card">
+                <h3>250+</h3>
+                <p>Children Helped</p>
+            </div>
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p>Years of Service</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Quality Care</p>
+            </div>
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Support Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Preview -->
+    <section class="blog-preview">
+        <div class="container">
+            <h2>Latest Updates</h2>
+            <div class="blog-grid">
+                <article class="blog-preview-card">
+                    <img src="img/blog1.jpg" alt="Blog post">
+                    <h3>Our New Learning Center Opens</h3>
+                    <p>Exciting news! We've just opened a state-of-the-art learning center with computers and updated resources...</p>
+                    <a href="blog.html">Read More</a>
+                </article>
+                <article class="blog-preview-card">
+                    <img src="img/blog2.jpg" alt="Blog post">
+                    <h3>Success Stories: Meet Our Graduates</h3>
+                    <p>Hear inspiring stories from children who have grown up at our orphanage and achieved their dreams...</p>
+                    <a href="blog.html">Read More</a>
+                </article>
+                <article class="blog-preview-card">
+                    <img src="img/blog3.jpg" alt="Blog post">
+                    <h3>Monthly Outreach Program Launched</h3>
+                    <p>Our community outreach program reached 100 more children this month with food, education, and support...</p>
+                    <a href="blog.html">Read More</a>
+                </article>
+            </div>
+            <a href="blog.html" class="btn btn-primary">View All Posts</a>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonateModal()">&times;</span>
+            <h2>Donate to Network for Children in Need</h2>
+            <form class="donate-form" id="donationForm" onsubmit="processDonationWithPayPal(event)">
+                <div class="form-group">
+                    <label for="donerName">Full Name</label>
+                    <input type="text" id="donerName" name="donerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerEmail">Email Address</label>
+                    <input type="email" id="donerEmail" name="donerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerMessage">Message (Optional)</label>
+                    <textarea id="donerMessage" name="donerMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="donate-btn">Proceed to PayPal</button>
+            </form>
+            <!-- PayPal Button Container -->
+            <div id="paypal-button-container" style="display:none; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZu0TJ8lWJw4POCPxNLPv0Ypqr5xQw0Q9x4z6K7L8M9N0O1P2Q3&currency=USD"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Network for Children in Need</h4>
+                    <p>Creating hope, changing lives, building futures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: 14 Alusine Lane, Furniture Junction Old Road Allen Town </p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: info@networkforchildren.org</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Network for Children in Need. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

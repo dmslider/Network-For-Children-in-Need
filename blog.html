@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Network for Children in Need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Organization Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Network for Children In Need</h1>
+                    <h1>Orphanage Home</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Blog</h1>
+            <p>Stories, Updates & Announcements</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <!-- Blog Search -->
+            <div class="blog-search">
+                <input type="text" id="searchInput" placeholder="Search blog posts..." onkeyup="searchPosts()">
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" onclick="openBlogPost(1)" style="cursor: pointer;">
+                    <img src="img/blog1.jpg" alt="New Learning Center">
+                    <div class="blog-card-content">
+                        <span class="blog-date">March 15, 2024</span>
+                        <span class="blog-category">Education</span>
+                        <h3>Our New Learning Center Opens</h3>
+                        <p>We're thrilled to announce the opening of our brand-new learning center! Equipped with 20 computers, high-speed internet, and modern educational software, this facility will revolutionize how our children learn and develop digital skills.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" onclick="openBlogPost(2)" style="cursor: pointer;">
+                    <img src="img/blog2.jpg" alt="Success Stories">
+                    <div class="blog-card-content">
+                        <span class="blog-date">March 10, 2024</span>
+                        <span class="blog-category">Success Stories</span>
+                        <h3>Success Stories: Meet Our Graduates</h3>
+                        <p>Meet Emma, one of our inspiring graduates who grew up in our orphanage and is now studying engineering at university. Her success is a testament to the love, support, and education we provide to our children.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" onclick="openBlogPost(3)" style="cursor: pointer;">
+                    <img src="img/blog3.jpg" alt="Outreach Program">
+                    <div class="blog-card-content">
+                        <span class="blog-date">March 5, 2024</span>
+                        <span class="blog-category">Community</span>
+                        <h3>Monthly Outreach Program Launched</h3>
+                        <p>Our community outreach program has expanded to reach 100 more children in the surrounding villages. Through partnerships with local organizations, we now provide food, education, healthcare, and emotional support to vulnerable children in need.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" onclick="openBlogPost(4)" style="cursor: pointer;">
+                    <img src="img/blog4.jpg" alt="Health & Wellness">
+                    <div class="blog-card-content">
+                        <span class="blog-date">February 28, 2024</span>
+                        <span class="blog-category">Health</span>
+                        <h3>Health & Wellness Initiative</h3>
+                        <p>We've launched a comprehensive health and wellness program that includes regular medical check-ups, nutritional counseling, mental health support, and sports programs. Every child's physical and mental wellbeing is our priority.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" onclick="openBlogPost(5)" style="cursor: pointer;">
+                    <img src="img/blog5.jpg" alt="Community Support">
+                    <div class="blog-card-content">
+                        <span class="blog-date">February 20, 2024</span>
+                        <span class="blog-category">Community</span>
+                        <h3>Thanks to Our Amazing Donors</h3>
+                        <p>A heartfelt thank you to all our donors and supporters who have made this year incredible. Your generosity has enabled us to provide better nutrition, improved facilities, and enhanced educational programs for our children.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" onclick="openBlogPost(6)" style="cursor: pointer;">
+                    <img src="img/blog6.jpg" alt="Annual Event">
+                    <div class="blog-card-content">
+                        <span class="blog-date">February 14, 2024</span>
+                        <span class="blog-category">Events</span>
+                        <h3>Valentine's Day Celebrations</h3>
+                        <p>Our children had a wonderful time celebrating Valentine's Day with games, special meals, and lots of love. These moments remind us of why our work is so important - to fill the lives of children with joy and warmth.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" onclick="openBlogPost(7)" style="cursor: pointer;">
+                    <img src="img/blog7.jpg" alt="Skills Training">
+                    <div class="blog-card-content">
+                        <span class="blog-date">February 10, 2024</span>
+                        <span class="blog-category">Education</span>
+                        <h3>Skills Training Program Launch</h3>
+                        <p>We've introduced vocational training programs to help our older children develop practical skills in carpentry, tailoring, cooking, and other trades. This prepares them for sustainable livelihoods after leaving our care.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" onclick="openBlogPost(8)" style="cursor: pointer;">
+                    <img src="img/blog8.jpg" alt="Construction Update">
+                    <div class="blog-card-content">
+                        <span class="blog-date">February 1, 2024</span>
+                        <span class="blog-category">Updates</span>
+                        <h3>New Dormitory Construction Completed</h3>
+                        <p>The new dormitory building is now complete! It provides comfortable sleeping quarters for 50 more children with modern amenities, better ventilation, and a safe, nurturing environment for rest and recovery.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" onclick="openBlogPost(9)" style="cursor: pointer;">
+                    <img src="img/blog9.jpg" alt="Sports Day">
+                    <div class="blog-card-content">
+                        <span class="blog-date">January 25, 2024</span>
+                        <span class="blog-category">Events</span>
+                        <h3>Annual Sports Day 2024</h3>
+                        <p>Our annual sports day was a huge success with children participating in various athletic events, team competitions, and fun activities. It was wonderful to see the children laughing, competing, and celebrating together.</p>
+                        <a href="#" class="read-more" onclick="event.stopPropagation();">Read Full Post</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <button class="btn btn-secondary">← Previous</button>
+                <span>Page 1 of 3</span>
+                <button class="btn btn-secondary">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive updates about our programs, stories, and ways you can help.</p>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Network for Children in Need</h4>
+                    <p>Creating hope, changing lives, building futures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: 14 Alusine Lane, Furniture Junction Old Road Allen Town</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: info@networkforchildren.org</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Network for Children in Need. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonateModal()">&times;</span>
+            <h2>Donate to Network for Children in Need</h2>
+            <form class="donate-form" id="donationForm" onsubmit="processDonationWithPayPal(event)">
+                <div class="form-group">
+                    <label for="donerName">Full Name</label>
+                    <input type="text" id="donerName" name="donerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerEmail">Email Address</label>
+                    <input type="email" id="donerEmail" name="donerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerMessage">Message (Optional)</label>
+                    <textarea id="donerMessage" name="donerMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="donate-btn">Proceed to PayPal</button>
+            </form>
+            <!-- PayPal Button Container -->
+            <div id="paypal-button-container" style="display:none; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZu0TJ8lWJw4POCPxNLPv0Ypqr5xQw0Q9x4z6K7L8M9N0O1P2Q3&currency=USD"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Network for Children in Need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Organization Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Network for Children In Need</h1>
+                    <h1>Orphanage Home</h1>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Gallery</h1>
+            <p>Moments of Joy and Discovery</p>
+        </div>
+    </section>
+
+    <!-- Gallery Carousel Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="carousel-filters">
+                <button class="filter-btn active" onclick="filterCarousel('all')">All</button>
+                <button class="filter-btn" onclick="filterCarousel('activities')">Activities</button>
+                <button class="filter-btn" onclick="filterCarousel('education')">Education</button>
+                <button class="filter-btn" onclick="filterCarousel('events')">Events</button>
+                <button class="filter-btn" onclick="filterCarousel('daily-life')">Daily Life</button>
+            </div>
+
+            <!-- Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack"></div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-btn carousel-prev" onclick="prevCarousel()">❮</button>
+                <button class="carousel-btn carousel-next" onclick="nextCarousel()">❯</button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want to Help Make More Memories?</h2>
+            <p>Your support enables us to provide activities, education, and opportunities for the children to thrive.</p>
+            <button class="donate-btn" onclick="openDonateModal()">Donate Now</button>
+        </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonateModal()">&times;</span>
+            <h2>Donate to Network for Children in Need</h2>
+            <form class="donate-form" id="donationForm" onsubmit="processDonationWithPayPal(event)">
+                <div class="form-group">
+                    <label for="donerName">Full Name</label>
+                    <input type="text" id="donerName" name="donerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerEmail">Email Address</label>
+                    <input type="email" id="donerEmail" name="donerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="donerMessage">Message (Optional)</label>
+                    <textarea id="donerMessage" name="donerMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="donate-btn">Proceed to PayPal</button>
+            </form>
+            <!-- PayPal Button Container -->
+            <div id="paypal-button-container" style="display:none; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- PayPal Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AZu0TJ8lWJw4POCPxNLPv0Ypqr5xQw0Q9x4z6K7L8M9N0O1P2Q3&currency=USD"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Network for Children in Need</h4>
+                    <p>Creating hope, changing lives, building futures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: 14 Alusine Lane, Furniture Junction Old Road Allen Town</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Email: info@networkforchildren.org</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Network for Children in Need. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
