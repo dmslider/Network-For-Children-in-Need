@@ -98,12 +98,15 @@ h1, h2, h3, h4, h5, h6 {
 .logo-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .logo h1 {
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
+    text-align: left;
 }
 
 .logo p {
@@ -111,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     opacity: 0.9;
     font-weight: 300;
+    text-align: left;
 }
 
 .nav-links {
@@ -1745,6 +1749,10 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero {
         height: 400px;
+    }
+
+    .hero-cta {
+        display: none;
     }
 
     .page-hero {
