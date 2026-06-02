@@ -495,6 +495,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3rem;
     color: #1e293b;
     font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .blog-grid {
@@ -513,6 +516,19 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     cursor: pointer;
     border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-preview-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blog-preview-card-content a {
+    margin-top: auto;
 }
 
 .blog-preview-card:hover,
@@ -555,22 +571,28 @@ h1, h2, h3, h4, h5, h6 {
 .blog-preview-card h3,
 .blog-card h3 {
     font-size: 1.3rem;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     color: #1e293b;
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .blog-preview-card p,
 .blog-card p {
     color: #64748b;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+    flex: 1;
 }
 
 .read-more {
     color: #6366f1;
     font-weight: 600;
     transition: color 0.3s ease;
+    display: inline-block;
+    margin-top: auto;
 }
 
 .read-more:hover {
@@ -1548,6 +1570,22 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.8;
     opacity: 0.9;
     font-size: 0.95rem;
+}
+
+.footer-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    opacity: 0.95;
 }
 
 .footer-section ul li {
